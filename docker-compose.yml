@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: ./app
+    command: npm run dev
+    volumes:
+      - ./app:/usr/src/app
+    env_file:
+      - ./app/.env
